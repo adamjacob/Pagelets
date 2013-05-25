@@ -12,6 +12,9 @@ $page_directory	= './pages/';
 $page_template	= $template_dir . 'page.php';
 $page_file_exts = array('html','md');
 
+// Get Markdown required plugins.
+include_once './dropplets/plugins/Markdown.php';
+
 	# This might be a page...
 	if( isset($_GET['filename']) ){
 
